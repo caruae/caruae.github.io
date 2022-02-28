@@ -34,6 +34,7 @@
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
 
+
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 
@@ -52,6 +53,7 @@
    <link href="css-pn/theme-plugin.css" rel="stylesheet" type="text/css">
    <!--== style -->
    <link href="css-pn/style.css" rel="stylesheet" type="text/css">
+
 
 
 </head>
@@ -82,8 +84,8 @@
             <li class="nav-item ">
               <a class="nav-link" href="IndexMainpage.html">Home </a>
             </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="about.html"> About <span class="sr-only">(current)</span> </a>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html"> About</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="service.html">Services</a>
@@ -91,8 +93,8 @@
             <li class="nav-item">
               <a class="nav-link" href="why.html">Why Us</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact Us</a>
+            <li class="nav-item active">
+              <a class="nav-link" href="contact.html">Contact Us <span class="sr-only">(current)</span> </a>
             </li>
           </ul>
           <div class="quote_btn-container">
@@ -110,35 +112,47 @@
   </header>
   <!-- end header section -->
 
-  <!-- about section -->
-
-  <section class="about_section layout_padding">
-    <div class="container  ">
+  <!-- contact section -->
+  <section class="contact_section layout_padding">
+    <div class="container">
       <div class="row">
-        <div class="col-md-6 ">
-          <div class="img-box">
-            <img src="images/about-img.png" alt="">
+        <div class="col-md-6">
+          <div class="form_container">
+            <div class="heading_container ">
+              <h2>
+                Get In Touch
+              </h2>
+            </div>
+            <form action="#">
+              <div>
+                <input type="text" placeholder="Your Name" />
+              </div>
+              <div>
+                <input type="email" placeholder="Your Email" />
+              </div>
+              <div>
+                <input type="text" placeholder="Your Phone" />
+              </div>
+              <div>
+                <input type="text" class="message-box" placeholder="Message" />
+              </div>
+              <div class="btn_box ">
+                <button>
+                  SEND
+                </button>
+              </div>
+            </form>
           </div>
         </div>
         <div class="col-md-6">
-          <div class="detail-box">
-            <div class="heading_container">
-              <h2>
-                About Us
-              </h2>
-            </div>
-            <p>
-              Words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks </p>
-            <a href="">
-              Read More
-            </a>
+          <div class="img-box">
+            <img src="images/contact-img.png" alt="">
           </div>
         </div>
       </div>
     </div>
   </section>
-
-  <!-- end about section -->
+  <!-- end contact section -->
 
   <!-- info section -->
 
