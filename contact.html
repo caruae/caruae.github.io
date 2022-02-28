@@ -54,7 +54,7 @@
    <!--== style -->
    <link href="css-pn/style.css" rel="stylesheet" type="text/css">
 
-
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 </head>
 
@@ -123,18 +123,18 @@
                 Get In Touch
               </h2>
             </div>
-            <form action="#">
+            <form id="submit-form" action="">
               <div>
-                <input type="text" placeholder="Your Name" />
+                <input type="text" name= "Name" placeholder="Your Name"  required />
               </div>
               <div>
-                <input type="email" placeholder="Your Email" />
+                <input type="email" name= "Email" placeholder="Your Email" required />
               </div>
               <div>
-                <input type="text" placeholder="Your Phone" />
+                <input type="number" name= "Mobile" placeholder="Your Phone" required />
               </div>
               <div>
-                <input type="text" class="message-box" placeholder="Message" />
+                <input type="text" name= "Message" class="message-box" placeholder="Message" required />
               </div>
               <div class="btn_box ">
                 <button>
@@ -153,7 +153,25 @@
     </div>
   </section>
   <!-- end contact section -->
-
+  <script>
+    $("#submit-form").submit((e)=>{
+    e.preventDefault()
+    $.ajax({
+    url:"https://script.google.com/macros/s/AKfycbz6J5vnNm1MMgk9aNJpCqnfKdFHimZ0ZfJuQRjtbKcaetjkzllWI5llm0-eBBpOIPozZA/exec",
+    data:$("#submit-form").serialize(),
+    method:"post",
+    success:function (response){
+    alert("Our sales team will contact you shortly. Thank you!")
+    window.location.reload()
+    //window.location.href="https://google.com"
+    },
+    error:function (err){
+    alert("Something Error")
+    
+    }
+    })
+    })
+    </script>
   <!-- info section -->
 
   <section class="info_section ">
