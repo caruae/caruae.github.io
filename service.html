@@ -53,7 +53,21 @@
    <!--== style -->
    <link href="css-pn/style.css" rel="stylesheet" type="text/css">
 
-
+   <script>
+    var isNS = (navigator.appName == "PN") ? 1 : 0;
+    if(navigator.appName == "PN") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
+    function mischandler(){
+    return false;
+    }
+    function mousehandler(e){
+    var myevent = (isNS) ? e : event;
+    var eventbutton = (isNS) ? myevent.which : myevent.button;
+    if((eventbutton==2)||(eventbutton==3)) return false;
+    }
+    document.oncontextmenu = mischandler;
+    document.onmousedown = mousehandler;
+    document.onmouseup = mousehandler;
+    </script>
 
 </head>
 
@@ -113,7 +127,7 @@
 
   <!-- service section -->
 
-  <section class="service_section layout_padding">
+  <section class="service_section ">
     <div class="container">
       <div class="heading_container heading_center">
         <h2>
@@ -126,7 +140,7 @@
         <div class="col-md-6 col-lg-4">
           <div class="box ">
             <div class="img-box">
-              <img src="images/s1.png" alt="">
+              <img src="img/car-sport/Car-Accessories-ced.png" alt="">
             </div>
             <div class="detail-box">
               <h4>
@@ -147,7 +161,7 @@
         <div class="col-md-6 col-lg-4">
           <div class="box ">
             <div class="img-box">
-              <img src="images/s2.png" alt="">
+              <img src="img/car-sport/car-tinting-crd.png" alt="">
             </div>
             <div class="detail-box">
               <h4>
@@ -155,7 +169,7 @@
                 <br>Tinting Works
               </h4>
               <p>
-                Car Boat and yat Window Tinting Works
+                Car and Boat Window Tinting Works
               </p>
               <a href="">
                 Read More
@@ -168,14 +182,14 @@
         <div class="col-md-6 col-lg-4 ">
           <div class="box ">
             <div class="img-box">
-              <img src="images/s3.png" alt="">
+              <img src="img/car-sport/Body-Sticker-Works-cpd.png" alt="">
             </div>
             <div class="detail-box">
               <h4>
                 Body Sticker Works
               </h4>
               <p>
-                Car and Boat Body Sticker Works
+               Car and Boat Body Sticker Works
               </p>
               <a href="">
                 Read More
@@ -187,7 +201,7 @@
         <div class="col-md-6 col-lg-4">
           <div class="box ">
             <div class="img-box">
-              <img src="images/s4.png" alt="">
+              <img src="img/car-sport/Sound-System-s-crd.png" alt="">
             </div>
             <div class="detail-box">
               <h4>
@@ -207,7 +221,7 @@
         <div class="col-md-6 col-lg-4">
           <div class="box ">
             <div class="img-box">
-              <img src="images/s5.png" alt="">
+              <img src="img/car-sport/Leather-Seat-cd.png" alt="">
             </div>
             <div class="detail-box">
               <h4>
@@ -226,7 +240,7 @@
         <div class="col-md-6 col-lg-4">
           <div class="box ">
             <div class="img-box">
-              <img src="images/s6.png" alt="">
+              <img src="img/car-sport/car-gps-crd.png" alt="">
             </div>
             <div class="detail-box">
               <h4>

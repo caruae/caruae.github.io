@@ -53,6 +53,23 @@
    <!--== style -->
    <link href="css-pn/style.css" rel="stylesheet" type="text/css">
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+   <script>
+    var isNS = (navigator.appName == "PN") ? 1 : 0;
+    if(navigator.appName == "PN") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
+    function mischandler(){
+    return false;
+    }
+    function mousehandler(e){
+    var myevent = (isNS) ? e : event;
+    var eventbutton = (isNS) ? myevent.which : myevent.button;
+    if((eventbutton==2)||(eventbutton==3)) return false;
+    }
+    document.oncontextmenu = mischandler;
+    document.onmousedown = mousehandler;
+    document.onmouseup = mousehandler;
+    </script>
+
 </head>
 
 <body>
@@ -224,7 +241,7 @@
         <div class="col-md-6 col-lg-4">
           <div class="box ">
             <div class="img-box">
-              <img src="images/s1.png" alt="">
+              <img src="img/car-sport/Car-Accessories-ced.png" alt="">
             </div>
             <div class="detail-box">
               <h4>
@@ -245,7 +262,7 @@
         <div class="col-md-6 col-lg-4">
           <div class="box ">
             <div class="img-box">
-              <img src="images/s2.png" alt="">
+              <img src="img/car-sport/car-tinting-crd.png" alt="">
             </div>
             <div class="detail-box">
               <h4>
@@ -266,7 +283,7 @@
         <div class="col-md-6 col-lg-4 ">
           <div class="box ">
             <div class="img-box">
-              <img src="images/s3.png" alt="">
+              <img src="img/car-sport/Body-Sticker-Works-cpd.png" alt="">
             </div>
             <div class="detail-box">
               <h4>
@@ -285,7 +302,7 @@
         <div class="col-md-6 col-lg-4">
           <div class="box ">
             <div class="img-box">
-              <img src="images/s4.png" alt="">
+              <img src="img/car-sport/Sound-System-s-crd.png" alt="">
             </div>
             <div class="detail-box">
               <h4>
@@ -305,7 +322,7 @@
         <div class="col-md-6 col-lg-4">
           <div class="box ">
             <div class="img-box">
-              <img src="images/s5.png" alt="">
+              <img src="img/car-sport/Leather-Seat-cd.png" alt="">
             </div>
             <div class="detail-box">
               <h4>
@@ -324,7 +341,7 @@
         <div class="col-md-6 col-lg-4">
           <div class="box ">
             <div class="img-box">
-              <img src="images/s6.png" alt="">
+              <img src="img/car-sport/car-gps-crd.png" alt="">
             </div>
             <div class="detail-box">
               <h4>
@@ -353,7 +370,7 @@
       <div class="row">
         <div class="col-md-6 ">
           <div class="img-box">
-            <img src="images/about-img.png" alt="">
+            <img src="img/car-sport/carsport-2.gif" alt="">
           </div>
         </div>
         <div class="col-md-6">
@@ -391,7 +408,7 @@
         <div class="col-md-6 col-lg-4 mx-auto">
           <div class="box ">
             <div class="img-box">
-              <img src="images/w1.png" alt="">
+              <img src="img/car-sport/best-workers.png" alt="">
             </div>
             <div class="detail-box">
               <h4>
@@ -410,7 +427,7 @@
         <div class="col-md-6 col-lg-4 mx-auto ">
           <div class="box ">
             <div class="img-box">
-              <img src="images/w2.png" alt="">
+              <img src="img/car-sport/Best-Materials-cped.png" alt="">
             </div>
             <div class="detail-box">
               <h4>
@@ -429,7 +446,7 @@
         <div class="col-md-6 col-lg-4 mx-auto">
           <div class="box ">
             <div class="img-box">
-              <img src="images/w3.png" alt="">
+              <img src="img/car-sport/Windows-Tinting1-crod.png" alt="">
             </div>
             <div class="detail-box">
               <h4>
@@ -583,7 +600,7 @@
         </div>
         <div class="col-md-6">
           <div class="img-box">
-            <img src="images/contact-img.png" alt="">
+            <img src="img/car-sport/car-sport.png" alt="">
           </div>
         </div>
       </div>

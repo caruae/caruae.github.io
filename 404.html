@@ -8,7 +8,7 @@
   <!-- Mobile Metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <!-- Site Metas -->
- 
+  <link rel="icon" href="img/favicon.ico"  />
   <meta name="keywords" content="Our Service Sound Systems, Body Sticker Works, Security Systems, Car GPS Navigation System, Upholstery Works, All Leather Seat Works, Window Tinting Works, All Type of Carrier Fittings and All Type of Car Accessories Sales & Fittings." />
   <meta name="description" content="Our Service Sound Systems, Body Sticker Works, Security Systems, Car GPS Navigation System, Upholstery Works, All Leather Seat Works, Window Tinting Works, All Type of Carrier Fittings and All Type of Car Accessories Sales & Fittings." />
   <meta name="author" content="carsportuae.com" />
@@ -55,6 +55,22 @@
    <link href="css-pn/style.css" rel="stylesheet" type="text/css">
 
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+   <script>
+    var isNS = (navigator.appName == "PN") ? 1 : 0;
+    if(navigator.appName == "PN") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
+    function mischandler(){
+    return false;
+    }
+    function mousehandler(e){
+    var myevent = (isNS) ? e : event;
+    var eventbutton = (isNS) ? myevent.which : myevent.button;
+    if((eventbutton==2)||(eventbutton==3)) return false;
+    }
+    document.oncontextmenu = mischandler;
+    document.onmousedown = mousehandler;
+    document.onmouseup = mousehandler;
+    </script>
 
 </head>
 
@@ -146,7 +162,7 @@
         </div>
         <div class="col-md-6">
           <div class="img-box">
-            <img src="images/contact-img.png" alt="">
+            <img src="img/car-sport/car-sport.png" alt="">
           </div>
         </div>
       </div>
